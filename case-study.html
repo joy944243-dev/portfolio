@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Case study by Afnan — AI video, images, websites and games." />
+  <meta name="theme-color" content="#0a0a0c" />
+  <link rel="canonical" href="https://afnan.dev/case-study.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Afnan" />
+  <meta property="og:title" content="Case Study — Afnan" />
+  <meta property="og:description" content="A deep dive into how the work was made." />
+  <meta property="og:image" content="assets/og.png" />
+  <meta property="og:url" content="https://afnan.dev/case-study.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Case Study — Afnan" />
+  <meta name="twitter:description" content="A deep dive into how the work was made." />
+  <meta name="twitter:image" content="assets/og.png" />
+  <title>Case Study — Afnan</title>
+  <link rel="icon" type="image/svg+xml" href="assets/afnan.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Sora:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" id="progress"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="index.html" class="brand" aria-label="Afnan — home">Afnan<span class="brand__dot">.</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="work.html" class="nav__link" data-page="work">Work</a>
+        <a href="services.html" class="nav__link">Services</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="notes.html" class="nav__link">Notes</a>
+        <a href="playground.html" class="nav__link">Playground</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+      <div class="nav__end">
+        <a href="contact.html" class="btn btn--primary btn--sm nav__cta">Let's talk <span aria-hidden="true">↗</span></a>
+        <button class="nav__burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="case" id="caseStudy">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--3"></span>
+        <span class="grain"></span>
+      </div>
+
+      <header class="wrap case__head">
+        <a href="work.html" class="back reveal">← All work</a>
+        <span class="eyebrow reveal" id="csCat"></span>
+        <h1 class="page-title reveal" id="csTitle">Case study</h1>
+        <p class="page-lead reveal" id="csTagline"></p>
+      </header>
+
+      <figure class="wrap case__hero reveal">
+        <img id="csHero" src="assets/afnan.svg" alt="" data-img />
+      </figure>
+
+      <div class="wrap case__layout">
+        <aside class="case__meta reveal" id="csMeta"></aside>
+        <div class="case__body">
+          <p class="case__intro reveal" id="csIntro"></p>
+          <section class="case__block reveal"><h2>Challenge</h2><p id="csChallenge"></p></section>
+          <section class="case__block reveal"><h2>Process</h2><p id="csProcess"></p></section>
+          <section class="case__block reveal"><h2>Solution</h2><p id="csSolution"></p></section>
+        </div>
+      </div>
+
+      <div class="wrap case__impact reveal" id="csImpact"></div>
+
+      <div class="wrap">
+        <div class="section__head reveal">
+          <span class="eyebrow">Gallery</span>
+          <h2 class="section__title">Selected <em class="grad">frames</em></h2>
+        </div>
+        <div class="case__gallery reveal" id="csGallery"></div>
+      </div>
+
+      <nav class="wrap case__pn" aria-label="Project navigation">
+        <a class="pn pn--prev" id="csPrev" href="work.html">
+          <span>← Previous</span><strong></strong>
+        </a>
+        <a class="pn pn--next" id="csNext" href="work.html">
+          <span>Next →</span><strong></strong>
+        </a>
+      </nav>
+
+      <noscript>
+        <div class="wrap" style="padding:40px 0 90px">
+          <p class="page-lead">Enable JavaScript to view this case study, or <a href="work.html" style="color:var(--accent)">browse all work</a>.</p>
+        </div>
+      </noscript>
+    </article>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <h2 class="reveal">Have a similar project?</h2>
+        <p class="reveal">Let's build the next case study together.</p>
+        <div class="cta-band__actions reveal">
+          <a href="contact.html" class="btn btn--primary">Start a project</a>
+          <a href="work.html" class="btn btn--ghost">See all work</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="brand">Afnan<span class="brand__dot">.</span></a>
+          <p>AI web developer crafting photoreal AI media, fast websites and playful games.</p>
+          <div class="footer__social">
+            <a href="https://github.com/afnanrahman" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+            <a href="https://www.linkedin.com/in/afnanrahman" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+            <a href="https://x.com/afnanbuilds" target="_blank" rel="noopener" aria-label="X (Twitter)">🐦</a>
+            <a href="mailto:hello@afnan.dev" aria-label="Email">✉️</a>
+          </div>
+        </div>
+        <nav class="footer__col" aria-label="Explore">
+          <h4>Explore</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="work.html">Work</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="footer__col" aria-label="Services">
+          <h4>Services</h4>
+          <a href="services.html">AI Video</a>
+          <a href="services.html">AI Images</a>
+          <a href="services.html">Websites</a>
+          <a href="services.html">Games</a>
+        </nav>
+        <div class="footer__col">
+          <h4>Get in touch</h4>
+          <a href="mailto:hello@afnan.dev">hello@afnan.dev</a>
+          <a href="contact.html">Start a project</a>
+          <a href="work.html">See the work</a>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <span>© <span id="year"></span> Afnan — AI Web Developer</span>
+        <span class="footer__made">Designed &amp; built by Afnan</span>
+        <a href="#top" class="footer__top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

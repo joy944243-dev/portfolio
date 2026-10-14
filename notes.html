@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Notes by Afnan — practical writing on AI video pipelines, fast web performance and WebGL game feel." />
+  <meta name="theme-color" content="#0a0a0c" />
+  <link rel="canonical" href="https://afnan.dev/notes.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Afnan" />
+  <meta property="og:title" content="Notes — Afnan" />
+  <meta property="og:description" content="Practical writing on generative media, web performance and game feel." />
+  <meta property="og:image" content="assets/og.png" />
+  <meta property="og:url" content="https://afnan.dev/notes.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Notes — Afnan" />
+  <meta name="twitter:description" content="Practical writing on generative media, web performance and game feel." />
+  <meta name="twitter:image" content="assets/og.png" />
+  <title>Notes — Afnan</title>
+  <link rel="icon" type="image/svg+xml" href="assets/afnan.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Sora:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Notes — Afnan",
+    "url": "https://afnan.dev/notes.html",
+    "author": { "@type": "Person", "name": "Afnan Rahman", "url": "https://afnan.dev/" },
+    "blogPost": [
+      { "@type": "BlogPosting", "headline": "A reproducible AI video pipeline", "url": "https://afnan.dev/post.html?p=reproducible-ai-video-pipeline", "datePublished": "2025-03-06", "author": { "@type": "Person", "name": "Afnan Rahman" } },
+      { "@type": "BlogPosting", "headline": "Fast sites with AI features that don't tank performance", "url": "https://afnan.dev/post.html?p=fast-sites-with-ai-features", "datePublished": "2025-02-11", "author": { "@type": "Person", "name": "Afnan Rahman" } },
+      { "@type": "BlogPosting", "headline": "WebGL game feel: the last 1% everyone skips", "url": "https://afnan.dev/post.html?p=webgl-game-feel", "datePublished": "2025-01-18", "author": { "@type": "Person", "name": "Afnan Rahman" } }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" id="progress"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="index.html" class="brand" aria-label="Afnan — home">Afnan<span class="brand__dot">.</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="work.html" class="nav__link">Work</a>
+        <a href="services.html" class="nav__link">Services</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="notes.html" class="nav__link">Notes</a>
+        <a href="playground.html" class="nav__link">Playground</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+      <div class="nav__end">
+        <a href="contact.html" class="btn btn--primary btn--sm nav__cta">Let's talk <span aria-hidden="true">↗</span></a>
+        <button class="nav__burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--3"></span>
+        <span class="grain"></span>
+      </div>
+      <div class="wrap">
+        <span class="eyebrow reveal">Notes</span>
+        <h1 class="page-title reveal">Writing on <em class="grad">craft &amp; AI</em></h1>
+        <p class="page-lead reveal">Short, practical pieces on building generative media, fast websites and games that feel good. No fluff — just what worked.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="notes">
+        <a class="note-card reveal" href="post.html?p=reproducible-ai-video-pipeline">
+          <span class="note-card__media">
+            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=900&h=560&q=80" alt="Cinematic AI video frame" loading="lazy" data-img />
+          </span>
+          <span class="note-card__body">
+            <span class="note-card__meta"><span class="note-card__tag">AI Video</span><span>March 2025</span><span>7 min read</span></span>
+            <h3>A reproducible AI video pipeline</h3>
+            <p>Generative video is easy to demo and hard to finish. The pipeline I use to keep characters, colour and motion consistent from first prompt to final grade.</p>
+            <span class="note-card__more">Read note <span aria-hidden="true">→</span></span>
+          </span>
+        </a>
+
+        <a class="note-card reveal" href="post.html?p=fast-sites-with-ai-features">
+          <span class="note-card__media">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=900&h=560&q=80" alt="Developer workspace" loading="lazy" data-img />
+          </span>
+          <span class="note-card__body">
+            <span class="note-card__meta"><span class="note-card__tag">Web</span><span>February 2025</span><span>6 min read</span></span>
+            <h3>Fast sites with AI features that don't tank performance</h3>
+            <p>Everyone wants AI on the marketing site. A practical pattern for shipping clever features without wrecking your Core Web Vitals.</p>
+            <span class="note-card__more">Read note <span aria-hidden="true">→</span></span>
+          </span>
+        </a>
+
+        <a class="note-card reveal" href="post.html?p=webgl-game-feel">
+          <span class="note-card__media">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&h=560&q=80" alt="Browser game" loading="lazy" data-img />
+          </span>
+          <span class="note-card__body">
+            <span class="note-card__meta"><span class="note-card__tag">Games</span><span>January 2025</span><span>5 min read</span></span>
+            <h3>WebGL game feel: the last 1% everyone skips</h3>
+            <p>Frame rate gets the credit, but feel is what players remember. Input latency, hit feedback and doing slightly too much for a single frame.</p>
+            <span class="note-card__more">Read note <span aria-hidden="true">→</span></span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <h2 class="reveal">Want this thinking on your project?</h2>
+        <p class="reveal">I write the way I build — clear, practical and focused on the result.</p>
+        <div class="cta-band__actions reveal">
+          <a href="contact.html" class="btn btn--primary">Start a project</a>
+          <a href="work.html" class="btn btn--ghost">See the work</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="brand">Afnan<span class="brand__dot">.</span></a>
+          <p>AI web developer crafting photoreal AI media, fast websites and playful games.</p>
+          <div class="footer__social">
+            <a href="https://github.com/afnanrahman" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+            <a href="https://www.linkedin.com/in/afnanrahman" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+            <a href="https://x.com/afnanbuilds" target="_blank" rel="noopener" aria-label="X (Twitter)">🐦</a>
+            <a href="mailto:hello@afnan.dev" aria-label="Email">✉️</a>
+          </div>
+        </div>
+        <nav class="footer__col" aria-label="Explore">
+          <h4>Explore</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="work.html">Work</a>
+          <a href="notes.html">Notes</a>
+          <a href="playground.html">Playground</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="footer__col" aria-label="Services">
+          <h4>Services</h4>
+          <a href="services.html">AI Video</a>
+          <a href="services.html">AI Images</a>
+          <a href="services.html">Websites</a>
+          <a href="services.html">Games</a>
+        </nav>
+        <div class="footer__col">
+          <h4>Get in touch</h4>
+          <a href="mailto:hello@afnan.dev">hello@afnan.dev</a>
+          <a href="contact.html">Start a project</a>
+          <a href="work.html">See the work</a>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <span>© <span id="year"></span> Afnan — AI Web Developer</span>
+        <span class="footer__made">Designed &amp; built by Afnan</span>
+        <a href="#top" class="footer__top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

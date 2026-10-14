@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Afnan — AI web developer building photoreal AI video and images, fast websites and immersive games." />
+  <meta name="theme-color" content="#0a0a0c" />
+  <link rel="canonical" href="https://afnan.dev/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Afnan" />
+  <meta property="og:title" content="Afnan — AI Web Developer" />
+  <meta property="og:description" content="Photoreal AI media, fast websites and immersive games — built with intent." />
+  <meta property="og:image" content="assets/og.png" />
+  <meta property="og:url" content="https://afnan.dev/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Afnan — AI Web Developer" />
+  <meta name="twitter:description" content="Photoreal AI media, fast websites and immersive games." />
+  <meta name="twitter:image" content="assets/og.png" />
+  <title>Afnan — AI Web Developer</title>
+  <link rel="icon" type="image/svg+xml" href="assets/afnan.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Sora:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Afnan — AI Web Developer",
+    "url": "https://afnan.dev/",
+    "inLanguage": "en",
+    "publisher": { "@type": "Person", "name": "Afnan Rahman" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Afnan Rahman",
+    "alternateName": "Afnan",
+    "jobTitle": "AI Web Developer",
+    "url": "https://afnan.dev/",
+    "email": "mailto:hello@afnan.dev",
+    "sameAs": [
+      "https://github.com/afnanrahman",
+      "https://www.linkedin.com/in/afnanrahman",
+      "https://x.com/afnanbuilds"
+    ],
+    "knowsAbout": ["AI video", "AI images", "Web development", "Game development", "Three.js", "Diffusion models"],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Realistic AI Video" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Photoreal AI Images" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Websites & Web Apps" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Games & Interactive" } }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="progress" id="progress"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="index.html" class="brand" aria-label="Afnan — home">Afnan<span class="brand__dot">.</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="work.html" class="nav__link">Work</a>
+        <a href="services.html" class="nav__link">Services</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="notes.html" class="nav__link">Notes</a>
+        <a href="playground.html" class="nav__link">Playground</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+      <div class="nav__end">
+        <a href="contact.html" class="btn btn--primary btn--sm nav__cta">Let's talk <span aria-hidden="true">↗</span></a>
+        <button class="nav__burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--2"></span>
+        <span class="blob blob--3"></span>
+        <span class="grain"></span>
+        <span class="hero__grid-lines"></span>
+      </div>
+
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <span class="pill reveal"><span class="pill__dot"></span> Available for freelance work</span>
+          <h1 class="hero__title">
+            <span class="line reveal">I build <em class="grad">AI‑powered</em></span>
+            <span class="line reveal">web experiences &amp;</span>
+            <span class="line reveal"><span id="typed" class="word"></span><span class="caret" aria-hidden="true"></span></span>
+          </h1>
+          <p class="hero__lead reveal">
+            I'm Afnan Rahman — an AI web developer blending photoreal generative media,
+            performant front‑end craft and playful interactivity into work that
+            feels effortless.
+          </p>
+          <div class="hero__actions reveal">
+            <a href="work.html" class="btn btn--primary">View selected work</a>
+            <a href="contact.html" class="btn btn--ghost">Let's talk</a>
+          </div>
+          <ul class="hero__meta reveal">
+            <li><strong data-count="120">0</strong><span>Projects shipped</span></li>
+            <li><strong data-count="48">0</strong><span>Happy clients</span></li>
+            <li><strong data-count="6">0</strong><span>Years experience</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="status-card" data-tilt>
+            <div class="status-card__bar">
+              <span class="status-card__dots"><i></i><i></i><i></i></span>
+              <span class="status-card__url">afnan.dev</span>
+            </div>
+            <div class="status-card__img">
+              <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&h=1100&q=80" alt="Generative AI visual" loading="eager" data-img />
+            </div>
+            <div class="status-card__body">
+              <div class="status-card__row">
+                <span class="status-card__avatar">AR</span>
+                <div>
+                  <strong>Afnan Rahman</strong>
+                  <span>AI Web Developer</span>
+                </div>
+                <span class="status-card__live"><i></i> online</span>
+              </div>
+              <div class="status-card__meter"><span style="--v:92%"></span></div>
+            </div>
+          </div>
+          <span class="chip chip--1 glass">🎬 AI Video</span>
+          <span class="chip chip--2 glass">🧠 Diffusion Models</span>
+          <span class="chip chip--3 glass">⚡ Web Performance</span>
+        </div>
+      </div>
+
+      <a href="#work" class="scroll-cue" aria-label="Scroll to work"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Generative Video</span><i>✳</i>
+          <span>Diffusion Models</span><i>✳</i>
+          <span>Three.js &amp; WebGL</span><i>✳</i>
+          <span>Real‑time Shaders</span><i>✳</i>
+          <span>LLM Agents</span><i>✳</i>
+          <span>React &amp; Vite</span><i>✳</i>
+          <span>Python &amp; APIs</span><i>✳</i>
+          <span>Motion Design</span><i>✳</i>
+        </div>
+        <div class="marquee__group">
+          <span>Generative Video</span><i>✳</i>
+          <span>Diffusion Models</span><i>✳</i>
+          <span>Three.js &amp; WebGL</span><i>✳</i>
+          <span>Real‑time Shaders</span><i>✳</i>
+          <span>LLM Agents</span><i>✳</i>
+          <span>React &amp; Vite</span><i>✳</i>
+          <span>Python &amp; APIs</span><i>✳</i>
+          <span>Motion Design</span><i>✳</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAPABILITIES -->
+    <section class="section" id="services">
+      <div class="section__head">
+        <span class="eyebrow reveal">What I do</span>
+        <h2 class="section__title reveal">Four things, <em class="grad">done properly</em></h2>
+      </div>
+      <div class="bento">
+        <a class="bento__item bento__item--wide reveal" href="services.html">
+          <span class="bento__num">01</span>
+          <h3>AI Video &amp; Film</h3>
+          <p>Photoreal generation, lip‑sync, upscaling and cinematic edits powered by generative models.</p>
+          <span class="bento__link">Explore <span aria-hidden="true">→</span></span>
+        </a>
+        <a class="bento__item reveal" href="services.html">
+          <span class="bento__num">02</span>
+          <h3>AI Imagery</h3>
+          <p>Concept art, product shots and portraits with fine‑tuned diffusion pipelines.</p>
+          <span class="bento__link">Explore <span aria-hidden="true">→</span></span>
+        </a>
+        <a class="bento__item reveal" href="services.html">
+          <span class="bento__num">03</span>
+          <h3>Websites &amp; Apps</h3>
+          <p>Fast, accessible, animated sites and full‑stack apps with AI baked in.</p>
+          <span class="bento__link">Explore <span aria-hidden="true">→</span></span>
+        </a>
+        <a class="bento__item bento__item--wide reveal" href="services.html">
+          <span class="bento__num">04</span>
+          <h3>Games &amp; Interactive</h3>
+          <p>Playable browser games and interactive experiences with smart AI opponents and juicy feedback.</p>
+          <span class="bento__link">Explore <span aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section class="section" id="work">
+      <div class="section__head section__head--split">
+        <div>
+          <span class="eyebrow reveal">Selected work</span>
+          <h2 class="section__title reveal">Recent <em class="grad">projects</em></h2>
+        </div>
+        <a href="work.html" class="btn btn--ghost reveal">View all work <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="work-grid">
+        <a class="work-card work-card--tall reveal" href="case-study.html?p=neon-dreams" data-tilt>
+          <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1000&h=1200&q=80" alt="Cinematic AI video" loading="lazy" data-img />
+          <span class="work-card__tag">AI Video</span>
+          <div class="work-card__overlay">
+            <h3>Neon Dreams — AI Short Film</h3>
+            <span>Generative · 2025</span>
+          </div>
+        </a>
+        <a class="work-card reveal" href="case-study.html?p=lumen" data-tilt>
+          <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1000&h=800&q=80" alt="AI SaaS website" loading="lazy" data-img />
+          <span class="work-card__tag">Website</span>
+          <div class="work-card__overlay">
+            <h3>Lumen — AI SaaS Platform</h3>
+            <span>Product · 2025</span>
+          </div>
+        </a>
+        <a class="work-card reveal" href="case-study.html?p=orbit-runner" data-tilt>
+          <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&h=800&q=80" alt="Browser game" loading="lazy" data-img />
+          <span class="work-card__tag">Game</span>
+          <div class="work-card__overlay">
+            <h3>Orbit Runner — WebGL Game</h3>
+            <span>Interactive · 2024</span>
+          </div>
+        </a>
+        <a class="work-card work-card--wide reveal" href="case-study.html?p=hyperreal-portrait" data-tilt>
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&h=800&q=80" alt="Photoreal AI portrait" loading="lazy" data-img />
+          <span class="work-card__tag">AI Image</span>
+          <div class="work-card__overlay">
+            <h3>Hyperreal Portrait Series</h3>
+            <span>Generative · 2025</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="section__head">
+        <span class="eyebrow reveal">How I work</span>
+        <h2 class="section__title reveal">A calm, <em class="grad">four‑step</em> process</h2>
+      </div>
+      <div class="steps">
+        <article class="step reveal">
+          <span class="step__num">01</span>
+          <h3>Listen &amp; map</h3>
+          <p>We talk through the goal, audience and constraints, then I map a clear path to the result.</p>
+        </article>
+        <article class="step reveal">
+          <span class="step__num">02</span>
+          <h3>Design the flow</h3>
+          <p>Wireframes, mood and motion direction — we agree on the feel before any code is written.</p>
+        </article>
+        <article class="step reveal">
+          <span class="step__num">03</span>
+          <h3>Build &amp; generate</h3>
+          <p>Clean, performant code and generative AI pipelines, refined in tight, reviewable iterations.</p>
+        </article>
+        <article class="step reveal">
+          <span class="step__num">04</span>
+          <h3>Ship &amp; polish</h3>
+          <p>Fast, accessible, measurable — then we tune based on real usage, not guesses.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section" id="testimonials">
+      <div class="section__head">
+        <span class="eyebrow reveal">Kind words</span>
+        <h2 class="section__title reveal">What <em class="grad">clients</em> say</h2>
+      </div>
+      <div class="quotes">
+        <figure class="quote reveal">
+          <span class="quote__stars" aria-label="5 out of 5">★★★★★</span>
+          <blockquote>Afnan turned a vague idea into a launch‑ready AI product in weeks. The motion and polish feel hand‑made.</blockquote>
+          <figcaption><span class="quote__av">MR</span><span><strong>Maya Reyes</strong><small>Founder, Lumen AI</small></span></figcaption>
+        </figure>
+        <figure class="quote reveal">
+          <span class="quote__stars" aria-label="5 out of 5">★★★★★</span>
+          <blockquote>The AI video work is genuinely photoreal. Our campaign engagement more than doubled after launch.</blockquote>
+          <figcaption><span class="quote__av">DC</span><span><strong>Daniel Cho</strong><small>Creative Lead, Atlas</small></span></figcaption>
+        </figure>
+        <figure class="quote reveal">
+          <span class="quote__stars" aria-label="5 out of 5">★★★★★</span>
+          <blockquote>Fast, communicative and obsessed with detail. The site loads instantly and looks incredible.</blockquote>
+          <figcaption><span class="quote__av">SK</span><span><strong>Sofia Klein</strong><small>Product Manager, Orbit</small></span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="wrap">
+        <h2 class="reveal">Have a project in mind?</h2>
+        <p class="reveal">Let's turn it into something people remember.</p>
+        <div class="cta-band__actions reveal">
+          <a href="contact.html" class="btn btn--primary">Start a project</a>
+          <a href="services.html" class="btn btn--ghost">See services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="brand">Afnan<span class="brand__dot">.</span></a>
+          <p>AI web developer crafting photoreal AI media, fast websites and playful games.</p>
+          <div class="footer__social">
+            <a href="https://github.com/afnanrahman" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+            <a href="https://www.linkedin.com/in/afnanrahman" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+            <a href="https://x.com/afnanbuilds" target="_blank" rel="noopener" aria-label="X (Twitter)">🐦</a>
+            <a href="mailto:hello@afnan.dev" aria-label="Email">✉️</a>
+          </div>
+        </div>
+        <nav class="footer__col" aria-label="Explore">
+          <h4>Explore</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="work.html">Work</a>
+          <a href="notes.html">Notes</a>
+          <a href="playground.html">Playground</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="footer__col" aria-label="Services">
+          <h4>Services</h4>
+          <a href="services.html">AI Video</a>
+          <a href="services.html">AI Images</a>
+          <a href="services.html">Websites</a>
+          <a href="services.html">Games</a>
+        </nav>
+        <div class="footer__col">
+          <h4>Get in touch</h4>
+          <a href="mailto:hello@afnan.dev">hello@afnan.dev</a>
+          <a href="contact.html">Start a project</a>
+          <a href="work.html">See the work</a>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <span>© <span id="year"></span> Afnan — AI Web Developer</span>
+        <span class="footer__made">Designed &amp; built by Afnan</span>
+        <a href="#top" class="footer__top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

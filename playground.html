@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Afnan playground — an interactive generative canvas and a browser reflex game. Built to show how the work feels, not just how it looks." />
+  <meta name="theme-color" content="#0a0a0c" />
+  <link rel="canonical" href="https://afnan.dev/playground.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Afnan" />
+  <meta property="og:title" content="Playground — Afnan" />
+  <meta property="og:description" content="Interactive generative art and a browser game. Move your cursor and play." />
+  <meta property="og:image" content="assets/og.png" />
+  <meta property="og:url" content="https://afnan.dev/playground.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Playground — Afnan" />
+  <meta name="twitter:description" content="Interactive generative art and a browser game. Move your cursor and play." />
+  <meta name="twitter:image" content="assets/og.png" />
+  <title>Playground — Afnan</title>
+  <link rel="icon" type="image/svg+xml" href="assets/afnan.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Sora:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Playground — Afnan",
+    "url": "https://afnan.dev/playground.html",
+    "description": "An interactive generative canvas and a browser reflex game.",
+    "author": { "@type": "Person", "name": "Afnan Rahman", "url": "https://afnan.dev/" },
+    "isPartOf": { "@type": "WebSite", "name": "Afnan", "url": "https://afnan.dev/" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" id="progress"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="index.html" class="brand" aria-label="Afnan — home">Afnan<span class="brand__dot">.</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="work.html" class="nav__link">Work</a>
+        <a href="services.html" class="nav__link">Services</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="notes.html" class="nav__link">Notes</a>
+        <a href="playground.html" class="nav__link">Playground</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+      <div class="nav__end">
+        <a href="contact.html" class="btn btn--primary btn--sm nav__cta">Let's talk <span aria-hidden="true">↗</span></a>
+        <button class="nav__burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--2"></span>
+        <span class="blob blob--3"></span>
+        <span class="grain"></span>
+      </div>
+      <div class="wrap">
+        <span class="eyebrow reveal">Playground</span>
+        <h1 class="page-title reveal">Things you can <em class="grad">touch</em></h1>
+        <p class="page-lead reveal">A portfolio shows the result; a playground shows the craft. Move your cursor, drag, and play — everything here runs in the browser with no dependencies.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap play">
+        <div class="play__head reveal">
+          <div>
+            <span class="eyebrow">01 — Generative</span>
+            <h2 class="play__title">Flow field</h2>
+          </div>
+          <div class="play__controls" role="group" aria-label="Flow field controls">
+            <button class="pchip is-active" data-palette="lime" type="button">Lime</button>
+            <button class="pchip" data-palette="ember" type="button">Ember</button>
+            <button class="pchip" data-palette="mono" type="button">Mono</button>
+            <button class="pchip" id="fieldClear" type="button">Clear</button>
+            <button class="pchip" id="fieldPause" type="button" aria-pressed="false">Pause</button>
+          </div>
+        </div>
+        <div class="play__stage reveal">
+          <canvas id="fieldCanvas" aria-label="Interactive generative flow-field canvas. Move the cursor to steer the particles." role="img"></canvas>
+          <span class="play__hint" aria-hidden="true">move / drag to steer ✦</span>
+        </div>
+        <p class="play__caption reveal">A few thousand particles advecting through a drifting noise field, tinted by the brand palette. Everything is drawn on the fly at your display's frame rate.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap play">
+        <div class="play__head reveal">
+          <div>
+            <span class="eyebrow">02 — Reflex</span>
+            <h2 class="play__title">Grid reflex</h2>
+          </div>
+          <div class="play__controls">
+            <span class="play__stat">Score <strong id="gameScore">0</strong></span>
+            <span class="play__stat">Best <strong id="gameBest">0</strong></span>
+            <span class="play__stat">Time <strong id="gameTime">20</strong></span>
+          </div>
+        </div>
+        <div class="game reveal">
+          <div class="game__grid" id="gameGrid" aria-label="Reflex grid. Click the highlighted tile as fast as you can."></div>
+          <div class="game__overlay" id="gameOverlay">
+            <h3 id="gameHeading">Ready?</h3>
+            <p id="gameBlurb">Hit the glowing tile before it moves. You have 20 seconds.</p>
+            <button class="btn btn--primary btn--sm" id="gameStart" type="button">Start game</button>
+          </div>
+        </div>
+        <p class="play__caption reveal">Hit the lit tile before it jumps. Each hit speeds it up; keyboard players can use the arrow keys and Enter.</p>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <h2 class="reveal">Like how it feels?</h2>
+        <p class="reveal">The same attention goes into every deliverable — demos, sites and games.</p>
+        <div class="cta-band__actions reveal">
+          <a href="contact.html" class="btn btn--primary">Start a project</a>
+          <a href="work.html" class="btn btn--ghost">See the work</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="brand">Afnan<span class="brand__dot">.</span></a>
+          <p>AI web developer crafting photoreal AI media, fast websites and playful games.</p>
+          <div class="footer__social">
+            <a href="https://github.com/afnanrahman" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+            <a href="https://www.linkedin.com/in/afnanrahman" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+            <a href="https://x.com/afnanbuilds" target="_blank" rel="noopener" aria-label="X (Twitter)">🐦</a>
+            <a href="mailto:hello@afnan.dev" aria-label="Email">✉️</a>
+          </div>
+        </div>
+        <nav class="footer__col" aria-label="Explore">
+          <h4>Explore</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="work.html">Work</a>
+          <a href="notes.html">Notes</a>
+          <a href="playground.html">Playground</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="footer__col" aria-label="Services">
+          <h4>Services</h4>
+          <a href="services.html">AI Video</a>
+          <a href="services.html">AI Images</a>
+          <a href="services.html">Websites</a>
+          <a href="services.html">Games</a>
+        </nav>
+        <div class="footer__col">
+          <h4>Get in touch</h4>
+          <a href="mailto:hello@afnan.dev">hello@afnan.dev</a>
+          <a href="contact.html">Start a project</a>
+          <a href="work.html">See the work</a>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <span>© <span id="year"></span> Afnan — AI Web Developer</span>
+        <span class="footer__made">Designed &amp; built by Afnan</span>
+        <a href="#top" class="footer__top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+  <script src="playground.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Selected work by Afnan — AI video, AI images, websites and games." />
+  <meta name="theme-color" content="#0a0a0c" />
+  <link rel="canonical" href="https://afnan.dev/work.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Afnan" />
+  <meta property="og:title" content="Work — Afnan" />
+  <meta property="og:description" content="AI video, generative imagery, web builds and games — filter to narrow it down." />
+  <meta property="og:image" content="assets/og.png" />
+  <meta property="og:url" content="https://afnan.dev/work.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Work — Afnan" />
+  <meta name="twitter:description" content="AI video, generative imagery, web builds and games." />
+  <meta name="twitter:image" content="assets/og.png" />
+  <title>Work — Afnan</title>
+  <link rel="icon" type="image/svg+xml" href="assets/afnan.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Sora:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "url": "https://afnan.dev/work.html",
+    "isPartOf": { "@type": "WebSite", "name": "Afnan", "url": "https://afnan.dev/" },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "url": "https://afnan.dev/case-study.html?p=neon-dreams", "name": "Neon Dreams — AI Short Film" },
+        { "@type": "ListItem", "position": 2, "url": "https://afnan.dev/case-study.html?p=hyperreal-portrait", "name": "Hyperreal Portrait Series" },
+        { "@type": "ListItem", "position": 3, "url": "https://afnan.dev/case-study.html?p=lumen", "name": "Lumen — AI SaaS Platform" },
+        { "@type": "ListItem", "position": 4, "url": "https://afnan.dev/case-study.html?p=orbit-runner", "name": "Orbit Runner — WebGL Game" },
+        { "@type": "ListItem", "position": 5, "url": "https://afnan.dev/case-study.html?p=skyline", "name": "Skyline — Generative Drone Film" },
+        { "@type": "ListItem", "position": 6, "url": "https://afnan.dev/case-study.html?p=dreamscapes", "name": "Dreamscapes — Generative Art" },
+        { "@type": "ListItem", "position": 7, "url": "https://afnan.dev/case-study.html?p=atlas", "name": "Atlas — E-commerce Experience" },
+        { "@type": "ListItem", "position": 8, "url": "https://afnan.dev/case-study.html?p=mindgrid", "name": "MindGrid — AI Puzzle Game" },
+        { "@type": "ListItem", "position": 9, "url": "https://afnan.dev/case-study.html?p=pulse", "name": "Pulse — AI Music Visual" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" id="progress"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="index.html" class="brand" aria-label="Afnan — home">Afnan<span class="brand__dot">.</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="work.html" class="nav__link">Work</a>
+        <a href="services.html" class="nav__link">Services</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="notes.html" class="nav__link">Notes</a>
+        <a href="playground.html" class="nav__link">Playground</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+      <div class="nav__end">
+        <a href="contact.html" class="btn btn--primary btn--sm nav__cta">Let's talk <span aria-hidden="true">↗</span></a>
+        <button class="nav__burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--2"></span>
+        <span class="blob blob--3"></span>
+        <span class="grain"></span>
+      </div>
+      <div class="wrap">
+        <span class="eyebrow reveal">Portfolio</span>
+        <h1 class="page-title reveal">Selected <em class="grad">work</em></h1>
+        <p class="page-lead reveal">A cross‑section of AI video, generative imagery, web builds and games — filter to narrow it down.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="filters reveal" id="filters" role="tablist" aria-label="Filter projects">
+        <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter" data-filter="video" role="tab" aria-selected="false">AI Video</button>
+        <button class="filter" data-filter="image" role="tab" aria-selected="false">AI Images</button>
+        <button class="filter" data-filter="web" role="tab" aria-selected="false">Websites</button>
+        <button class="filter" data-filter="game" role="tab" aria-selected="false">Games</button>
+      </div>
+
+      <div class="grid" id="grid">
+        <a class="card reveal" href="case-study.html?p=neon-dreams" data-cat="video">
+          <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=700&h=700&q=80" alt="Cinematic AI video" loading="lazy" data-img />
+          <div class="card__info"><span class="card__cat">AI Video</span><h3>Neon Dreams — AI Short Film</h3></div>
+          <span class="card__arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="card reveal" href="case-study.html?p=hyperreal-portrait" data-cat="image">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=700&h=700&q=80" alt="Photoreal AI portrait" loading="lazy" data-img />
+          <div class="card__info"><span class="card__cat">AI Image</span><h3>Hyperreal Portrait Series</h3></div>
+          <span class="card__arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="card reveal" href="case-study.html?p=lumen" data-cat="web">
+          <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=700&h=700&q=80" alt="AI SaaS website" loading="lazy" data-img />
+          <div class="card__info"><span class="card__cat">Website</span><h3>Lumen — AI SaaS Platform</h3></div>
+          <span class="card__arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="card reveal" href="case-study.html?p=orbit-runner" data-cat="game">
+          <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=700&h=700&q=80" alt="Browser game" loading="lazy" data-img />
+          <div class="card__info"><span class="card__cat">Game</span><h3>Orbit Runner — WebGL Game</h3></div>
+          <span class="card__arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="card reveal" href="case-study.html?p=skyline" data-cat="video">
+          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=700&h=700&q=80" alt="AI drone footage" loading="lazy" data-img />
+          <div class="card__info"><span class="card__cat">AI Video</span><h3>Skyline — Generative Drone Film</h3></div>
+          <span class="card__arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="card reveal" href="case-study.html?p=dreamscapes" data-cat="image">
+          <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=700&h=700&q=80" alt="Surreal AI art" loading="lazy" data-img />
+          <div class="card__info"><span class="card__cat">AI Image</span><h3>Dreamscapes — Generative Art</h3></div>
+          <span class="card__arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="card reveal" href="case-study.html?p=atlas" data-cat="web">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&h=700&q=80" alt="E-commerce website" loading="lazy" data-img />
+          <div class="card__info"><span class="card__cat">Website</span><h3>Atlas — E‑commerce Experience</h3></div>
+          <span class="card__arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="card reveal" href="case-study.html?p=mindgrid" data-cat="game">
+          <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=700&h=700&q=80" alt="AI puzzle game" loading="lazy" data-img />
+          <div class="card__info"><span class="card__cat">Game</span><h3>MindGrid — AI Puzzle Game</h3></div>
+          <span class="card__arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="card reveal" href="case-study.html?p=pulse" data-cat="video">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=700&h=700&q=80" alt="AI music visual" loading="lazy" data-img />
+          <div class="card__info"><span class="card__cat">AI Video</span><h3>Pulse — AI Music Visual</h3></div>
+          <span class="card__arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <h2 class="reveal">Like what you see?</h2>
+        <p class="reveal">Let's make your project the next one on this page.</p>
+        <div class="cta-band__actions reveal">
+          <a href="contact.html" class="btn btn--primary">Start a project</a>
+          <a href="services.html" class="btn btn--ghost">See services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="brand">Afnan<span class="brand__dot">.</span></a>
+          <p>AI web developer crafting photoreal AI media, fast websites and playful games.</p>
+          <div class="footer__social">
+            <a href="https://github.com/afnanrahman" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+            <a href="https://www.linkedin.com/in/afnanrahman" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+            <a href="https://x.com/afnanbuilds" target="_blank" rel="noopener" aria-label="X (Twitter)">🐦</a>
+            <a href="mailto:hello@afnan.dev" aria-label="Email">✉️</a>
+          </div>
+        </div>
+        <nav class="footer__col" aria-label="Explore">
+          <h4>Explore</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="work.html">Work</a>
+          <a href="notes.html">Notes</a>
+          <a href="playground.html">Playground</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="footer__col" aria-label="Services">
+          <h4>Services</h4>
+          <a href="services.html">AI Video</a>
+          <a href="services.html">AI Images</a>
+          <a href="services.html">Websites</a>
+          <a href="services.html">Games</a>
+        </nav>
+        <div class="footer__col">
+          <h4>Get in touch</h4>
+          <a href="mailto:hello@afnan.dev">hello@afnan.dev</a>
+          <a href="contact.html">Start a project</a>
+          <a href="work.html">See the work</a>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <span>© <span id="year"></span> Afnan — AI Web Developer</span>
+        <span class="footer__made">Designed &amp; built by Afnan</span>
+        <a href="#top" class="footer__top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

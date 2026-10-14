@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Afnan — AI video, images, websites and games. Replies within 24 hours." />
+  <meta name="theme-color" content="#0a0a0c" />
+  <link rel="canonical" href="https://afnan.dev/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Afnan" />
+  <meta property="og:title" content="Contact — Afnan" />
+  <meta property="og:description" content="Tell me about your project and I'll get back within 24 hours." />
+  <meta property="og:image" content="assets/og.png" />
+  <meta property="og:url" content="https://afnan.dev/contact.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — Afnan" />
+  <meta name="twitter:description" content="Tell me about your project and I'll get back within 24 hours." />
+  <meta name="twitter:image" content="assets/og.png" />
+  <title>Contact — Afnan</title>
+  <link rel="icon" type="image/svg+xml" href="assets/afnan.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Sora:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "url": "https://afnan.dev/contact.html",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Afnan Rahman",
+      "email": "hello@afnan.dev",
+      "url": "https://afnan.dev/",
+      "contactPoint": { "@type": "ContactPoint", "contactType": "sales", "email": "hello@afnan.dev", "availableLanguage": "English" }
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" id="progress"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="index.html" class="brand" aria-label="Afnan — home">Afnan<span class="brand__dot">.</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="work.html" class="nav__link">Work</a>
+        <a href="services.html" class="nav__link">Services</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="notes.html" class="nav__link">Notes</a>
+        <a href="playground.html" class="nav__link">Playground</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+      <div class="nav__end">
+        <a href="contact.html" class="btn btn--primary btn--sm nav__cta">Let's talk <span aria-hidden="true">↗</span></a>
+        <button class="nav__burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--3"></span>
+        <span class="grain"></span>
+      </div>
+      <div class="wrap">
+        <span class="eyebrow reveal">Contact</span>
+        <h1 class="page-title reveal">Have an idea?<br /><em class="grad">Let's build it.</em></h1>
+        <p class="page-lead reveal">Tell me about your project and I'll get back within 24 hours.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="contact">
+        <div class="contact__info reveal">
+          <h2 class="contact__title">Let's make something people remember.</h2>
+          <p>Whether it's a cinematic AI short, a fast marketing site or a playful game — send me the details and I'll reply with next steps.</p>
+          <ul class="contact__list">
+            <li><span aria-hidden="true">✉️</span> <a href="mailto:hello@afnan.dev">hello@afnan.dev</a></li>
+            <li><span aria-hidden="true">📍</span> Remote · Worldwide</li>
+            <li><span aria-hidden="true">📄</span> <a href="resume.html">Download CV</a></li>
+          </ul>
+          <div class="contact__socials">
+            <a href="https://github.com/afnanrahman" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/afnanrahman" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://x.com/afnanbuilds" target="_blank" rel="noopener">X ↗</a>
+          </div>
+          <div class="contact__meta">
+            <span class="contact__badge"><i></i> Currently accepting new projects</span>
+          </div>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <input type="text" id="name" name="name" placeholder=" " required autocomplete="name" />
+            <label for="name">Your name</label>
+          </div>
+          <div class="field">
+            <input type="email" id="email" name="email" placeholder=" " required autocomplete="email" />
+            <label for="email">Email address</label>
+          </div>
+          <div class="field">
+            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+            <label for="message">Project details</label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send message</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="brand">Afnan<span class="brand__dot">.</span></a>
+          <p>AI web developer crafting photoreal AI media, fast websites and playful games.</p>
+          <div class="footer__social">
+            <a href="https://github.com/afnanrahman" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+            <a href="https://www.linkedin.com/in/afnanrahman" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+            <a href="https://x.com/afnanbuilds" target="_blank" rel="noopener" aria-label="X (Twitter)">🐦</a>
+            <a href="mailto:hello@afnan.dev" aria-label="Email">✉️</a>
+          </div>
+        </div>
+        <nav class="footer__col" aria-label="Explore">
+          <h4>Explore</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="work.html">Work</a>
+          <a href="notes.html">Notes</a>
+          <a href="playground.html">Playground</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="footer__col" aria-label="Services">
+          <h4>Services</h4>
+          <a href="services.html">AI Video</a>
+          <a href="services.html">AI Images</a>
+          <a href="services.html">Websites</a>
+          <a href="services.html">Games</a>
+        </nav>
+        <div class="footer__col">
+          <h4>Get in touch</h4>
+          <a href="mailto:hello@afnan.dev">hello@afnan.dev</a>
+          <a href="contact.html">Start a project</a>
+          <a href="work.html">See the work</a>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <span>© <span id="year"></span> Afnan — AI Web Developer</span>
+        <span class="footer__made">Designed &amp; built by Afnan</span>
+        <a href="#top" class="footer__top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
