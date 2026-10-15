@@ -1189,6 +1189,10 @@ html.leaving .site-footer {
 .game__overlay h3 { font-family: var(--font-display); font-weight: 700; font-size: 1.6rem; letter-spacing: -0.02em; }
 .game__overlay p { color: var(--muted); max-width: 42ch; margin-bottom: 6px; }
 
+/* ---------- Target range game ---------- */
+#shootCanvas { cursor: none; }
+.play__stage .game__overlay { cursor: default; }
+
 @media (max-width: 1000px) {
   .notes { grid-template-columns: repeat(2, 1fr); }
 }

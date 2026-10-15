@@ -112,13 +112,40 @@
         </div>
         <div class="game reveal">
           <div class="game__grid" id="gameGrid" aria-label="Reflex grid. Click the highlighted tile as fast as you can."></div>
-          <div class="game__overlay" id="gameOverlay">
+          <div class="game__overlay is-visible" id="gameOverlay">
             <h3 id="gameHeading">Ready?</h3>
             <p id="gameBlurb">Hit the glowing tile before it moves. You have 20 seconds.</p>
             <button class="btn btn--primary btn--sm" id="gameStart" type="button">Start game</button>
           </div>
         </div>
         <p class="play__caption reveal">Hit the lit tile before it jumps. Each hit speeds it up; keyboard players can use the arrow keys and Enter.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap play">
+        <div class="play__head reveal">
+          <div>
+            <span class="eyebrow">03 — Arcade</span>
+            <h2 class="play__title">Target range</h2>
+          </div>
+          <div class="play__controls">
+            <span class="play__stat">Score <strong id="shootScore">0</strong></span>
+            <span class="play__stat">Best <strong id="shootBest">0</strong></span>
+            <span class="play__stat">Ammo <strong id="shootAmmo">12</strong></span>
+            <span class="play__stat">Time <strong id="shootTime">30</strong></span>
+          </div>
+        </div>
+        <div class="play__stage reveal">
+          <canvas id="shootCanvas" aria-label="Target range. Aim with your pointer and click or tap to shoot the moving targets." role="img"></canvas>
+          <span class="play__hint" aria-hidden="true">click to shoot · R to reload ✦</span>
+          <div class="game__overlay is-visible" id="shootOverlay">
+            <h3 id="shootHeading">Target range</h3>
+            <p id="shootBlurb">Pop each target before it fades. You have 30 seconds and 12 rounds — press R to reload.</p>
+            <button class="btn btn--primary btn--sm" id="shootStart" type="button">Start shooting</button>
+          </div>
+        </div>
+        <p class="play__caption reveal">Aim, manage your ammo and beat the clock. Bullseyes score more — and every shot counts against your accuracy.</p>
       </div>
     </section>
 
